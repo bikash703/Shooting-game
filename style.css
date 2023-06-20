@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.myGame{
+    height: 100vh;
+}
+canvas{
+    background-color: rgb( 49, 49, 49);
+    width: 100%;
+}
+.scoreBoard{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    display: none;
+    font-size: 1.2vmax;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 600;
+    color: #fff;
+}
+form{
+    height: 60vh;
+    width: 60vw;
+    background-color: rgba(255, 255, 255, 0.16);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+form>select,form>select>option{
+    width: 20vw;
+    padding: 1.5vmax;
+    font: 1.3vmax;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    align-items: center;
+    font-family: cursive;
+    transition: all 0.5s;
+    letter-spacing: 1px;
+    font-weight: 500
+}
+form>input{
+    padding: 2vamx;
+    margin: 2vmax;
+    width: 20vw;
+    height: 8vh;
+    font-size: 1.2vmax;
+    font-family: cursive;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(221, 73, 73);
+    color: #fff;
+    cursor: pointer;
+}
+form>select:hover{
+    box-shadow: 0 0 10px #fff;
+}
+form>input:hover{
+    box-shadow: 0 0 10px #fff;
+}
+
+.gameover{
+    background-color: rgba(122, 122, 122, 0.041);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.gameover>button{
+    padding: 1vmax;
+    border: none;
+    outline: none;
+    background-color:rgb(255, 255, 255);
+    font-size: 1vmax;
+    font-family: cursive;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+    margin-top: 2.5vmax;
+}
+.gameover>button:hover{
+    background-color: rgb( 33, 33, 34);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.gameover>div{
+    color: rgb(255, 255, 255);
+    font-size: 2vmax;
+    font-family: cursive;
+    font-weight: 600;
+}
